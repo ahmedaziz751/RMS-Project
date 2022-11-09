@@ -1,0 +1,15 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskName": "task-Resturan_Otomasyonu.v11",
+      "appliesTo": "Resturan_Otomasyonu.v11.suo",
+      "type": "launch"
+    },
+    {
+      "taskName": "task-Restuan_Otomasyonu",
+      "appliesTo": "Restuan_Otomasyonu/",
+      "type": "launch"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+C:\Users\ahmed\Desktop\RMS Project\RMS\FastFoodDemo\bin\Release\Bunifu_UI_v1.52.dll
+C:\Users\ahmed\Desktop\RMS Project\RMS\FastFoodDemo\obj\Release\Resturan_Otomasyonu.csproj.GenerateResource.cache
+C:\Users\ahmed\Desktop\RMS Project\RMS\FastFoodDemo\obj\Release\Resturan_Otomasyonu.csproj.CoreCompileInputs.cache
+C:\Users\ahmed\Desktop\RMS Project\RMS\FastFoodDemo\obj\Release\Resturan_Otomasyonu.csproj.CopyComplete
+C:\Users\ahmed\Desktop\RMS Project\RMS\FastFoodDemo\obj\Release\Resturan_Otomasyonu.csprojAssemblyReference.cache
+C:\Users\ahmed\Desktop\RMS Project\RMS\FastFoodDemo\bin\Release\Resturan_Otomasyonu.exe.config
+C:\Users\ahmed\Desktop\RMS Project\RMS\FastFoodDemo\bin\Release\Resturan_Otomasyonu.exe
+C:\Users\ahmed\Desktop\RMS Project\RMS\FastFoodDemo\bin\Release\Resturan_Otomasyonu.pdb
+C:\Users\ahmed\Desktop\RMS Project\RMS\FastFoodDemo\obj\Release\Resturan_Otomasyonu.HomeScreen.resources
+C:\Users\ahmed\Desktop\RMS Project\RMS\FastFoodDemo\obj\Release\Resturan_Otomasyonu.LoginScreen.resources
+C:\Users\ahmed\Desktop\RMS Project\RMS\FastFoodDemo\obj\Release\Resturan_Otomasyonu.Properties.Resources.resources
+C:\Users\ahmed\Desktop\RMS Project\RMS\FastFoodDemo\obj\Release\Resturan_Otomasyonu.AddNewUser.resources
+C:\Users\ahmed\Desktop\RMS Project\RMS\FastFoodDemo\obj\Release\Resturan_Otomasyonu.SplashScreen.resources
+C:\Users\ahmed\Desktop\RMS Project\RMS\FastFoodDemo\obj\Release\Resturan_Otomasyonu.exe
+C:\Users\ahmed\Desktop\RMS Project\RMS\FastFoodDemo\obj\Release\Resturan_Otomasyonu.pdb
