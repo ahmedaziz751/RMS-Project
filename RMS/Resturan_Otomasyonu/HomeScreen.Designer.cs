@@ -30,23 +30,26 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeScreen));
             this.panel2 = new System.Windows.Forms.Panel();
-            this.bunifuTileButton5 = new Bunifu.Framework.UI.BunifuTileButton();
-            this.bunifuTileButton2 = new Bunifu.Framework.UI.BunifuTileButton();
-            this.bunifuTileButton4 = new Bunifu.Framework.UI.BunifuTileButton();
+            this.Minimize = new Bunifu.Framework.UI.BunifuImageButton();
+            this.TablesAndOrders = new Bunifu.Framework.UI.BunifuTileButton();
+            this.AddNewUser = new Bunifu.Framework.UI.BunifuTileButton();
+            this.Menu = new Bunifu.Framework.UI.BunifuTileButton();
             this.RemoveUser = new Bunifu.Framework.UI.BunifuTileButton();
-            this.bunifuTileButton3 = new Bunifu.Framework.UI.BunifuTileButton();
+            this.StaffList = new Bunifu.Framework.UI.BunifuTileButton();
             this.ExirBtn = new Bunifu.Framework.UI.BunifuTileButton();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Minimize)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.panel2.Controls.Add(this.bunifuTileButton5);
-            this.panel2.Controls.Add(this.bunifuTileButton2);
-            this.panel2.Controls.Add(this.bunifuTileButton4);
+            this.panel2.Controls.Add(this.Minimize);
+            this.panel2.Controls.Add(this.TablesAndOrders);
+            this.panel2.Controls.Add(this.AddNewUser);
+            this.panel2.Controls.Add(this.Menu);
             this.panel2.Controls.Add(this.RemoveUser);
-            this.panel2.Controls.Add(this.bunifuTileButton3);
+            this.panel2.Controls.Add(this.StaffList);
             this.panel2.Controls.Add(this.ExirBtn);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
@@ -55,68 +58,82 @@
             this.panel2.TabIndex = 0;
             this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
             // 
-            // bunifuTileButton5
+            // Minimize
             // 
-            this.bunifuTileButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.bunifuTileButton5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.bunifuTileButton5.color = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.bunifuTileButton5.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(29)))), ((int)(((byte)(31)))));
-            this.bunifuTileButton5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTileButton5.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.bunifuTileButton5.ForeColor = System.Drawing.Color.White;
-            this.bunifuTileButton5.Image = ((System.Drawing.Image)(resources.GetObject("bunifuTileButton5.Image")));
-            this.bunifuTileButton5.ImagePosition = 50;
-            this.bunifuTileButton5.ImageZoom = 40;
-            this.bunifuTileButton5.LabelPosition = 60;
-            this.bunifuTileButton5.LabelText = "Tables and Orders";
-            this.bunifuTileButton5.Location = new System.Drawing.Point(30, 32);
-            this.bunifuTileButton5.Margin = new System.Windows.Forms.Padding(6);
-            this.bunifuTileButton5.Name = "bunifuTileButton5";
-            this.bunifuTileButton5.Size = new System.Drawing.Size(289, 249);
-            this.bunifuTileButton5.TabIndex = 4;
-            this.bunifuTileButton5.Click += new System.EventHandler(this.bunifuTileButton5_Click);
+            this.Minimize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.Minimize.Image = ((System.Drawing.Image)(resources.GetObject("Minimize.Image")));
+            this.Minimize.ImageActive = null;
+            this.Minimize.Location = new System.Drawing.Point(955, 12);
+            this.Minimize.Name = "Minimize";
+            this.Minimize.Size = new System.Drawing.Size(21, 18);
+            this.Minimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Minimize.TabIndex = 5;
+            this.Minimize.TabStop = false;
+            this.Minimize.Zoom = 10;
+            this.Minimize.Click += new System.EventHandler(this.Minimize_Click);
             // 
-            // bunifuTileButton2
+            // TablesAndOrders
             // 
-            this.bunifuTileButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.bunifuTileButton2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.bunifuTileButton2.color = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.bunifuTileButton2.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(29)))), ((int)(((byte)(31)))));
-            this.bunifuTileButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTileButton2.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.bunifuTileButton2.ForeColor = System.Drawing.Color.White;
-            this.bunifuTileButton2.Image = ((System.Drawing.Image)(resources.GetObject("bunifuTileButton2.Image")));
-            this.bunifuTileButton2.ImagePosition = 50;
-            this.bunifuTileButton2.ImageZoom = 40;
-            this.bunifuTileButton2.LabelPosition = 60;
-            this.bunifuTileButton2.LabelText = "Add New User";
-            this.bunifuTileButton2.Location = new System.Drawing.Point(30, 304);
-            this.bunifuTileButton2.Margin = new System.Windows.Forms.Padding(6);
-            this.bunifuTileButton2.Name = "bunifuTileButton2";
-            this.bunifuTileButton2.Size = new System.Drawing.Size(289, 249);
-            this.bunifuTileButton2.TabIndex = 4;
-            this.bunifuTileButton2.Click += new System.EventHandler(this.bunifuTileButton2_Click);
+            this.TablesAndOrders.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.TablesAndOrders.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TablesAndOrders.color = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.TablesAndOrders.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(29)))), ((int)(((byte)(31)))));
+            this.TablesAndOrders.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TablesAndOrders.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.TablesAndOrders.ForeColor = System.Drawing.Color.White;
+            this.TablesAndOrders.Image = ((System.Drawing.Image)(resources.GetObject("TablesAndOrders.Image")));
+            this.TablesAndOrders.ImagePosition = 50;
+            this.TablesAndOrders.ImageZoom = 40;
+            this.TablesAndOrders.LabelPosition = 60;
+            this.TablesAndOrders.LabelText = "Tables and Orders";
+            this.TablesAndOrders.Location = new System.Drawing.Point(30, 32);
+            this.TablesAndOrders.Margin = new System.Windows.Forms.Padding(6);
+            this.TablesAndOrders.Name = "TablesAndOrders";
+            this.TablesAndOrders.Size = new System.Drawing.Size(289, 249);
+            this.TablesAndOrders.TabIndex = 4;
+            this.TablesAndOrders.Click += new System.EventHandler(this.TablesAndOreders_Click);
             // 
-            // bunifuTileButton4
+            // AddNewUser
             // 
-            this.bunifuTileButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.bunifuTileButton4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.bunifuTileButton4.color = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.bunifuTileButton4.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(29)))), ((int)(((byte)(31)))));
-            this.bunifuTileButton4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTileButton4.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.bunifuTileButton4.ForeColor = System.Drawing.Color.White;
-            this.bunifuTileButton4.Image = ((System.Drawing.Image)(resources.GetObject("bunifuTileButton4.Image")));
-            this.bunifuTileButton4.ImagePosition = -30;
-            this.bunifuTileButton4.ImageZoom = 100;
-            this.bunifuTileButton4.LabelPosition = 60;
-            this.bunifuTileButton4.LabelText = "Menu";
-            this.bunifuTileButton4.Location = new System.Drawing.Point(347, 32);
-            this.bunifuTileButton4.Margin = new System.Windows.Forms.Padding(6);
-            this.bunifuTileButton4.Name = "bunifuTileButton4";
-            this.bunifuTileButton4.Size = new System.Drawing.Size(289, 249);
-            this.bunifuTileButton4.TabIndex = 4;
-            this.bunifuTileButton4.Click += new System.EventHandler(this.bunifuTileButton4_Click);
+            this.AddNewUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.AddNewUser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.AddNewUser.color = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.AddNewUser.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(29)))), ((int)(((byte)(31)))));
+            this.AddNewUser.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AddNewUser.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.AddNewUser.ForeColor = System.Drawing.Color.White;
+            this.AddNewUser.Image = ((System.Drawing.Image)(resources.GetObject("AddNewUser.Image")));
+            this.AddNewUser.ImagePosition = 50;
+            this.AddNewUser.ImageZoom = 40;
+            this.AddNewUser.LabelPosition = 60;
+            this.AddNewUser.LabelText = "Add New User";
+            this.AddNewUser.Location = new System.Drawing.Point(30, 304);
+            this.AddNewUser.Margin = new System.Windows.Forms.Padding(6);
+            this.AddNewUser.Name = "AddNewUser";
+            this.AddNewUser.Size = new System.Drawing.Size(289, 249);
+            this.AddNewUser.TabIndex = 4;
+            this.AddNewUser.Click += new System.EventHandler(this.AddNewUser_Click);
+            // 
+            // Menu
+            // 
+            this.Menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.Menu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Menu.color = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.Menu.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(29)))), ((int)(((byte)(31)))));
+            this.Menu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Menu.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.Menu.ForeColor = System.Drawing.Color.White;
+            this.Menu.Image = ((System.Drawing.Image)(resources.GetObject("Menu.Image")));
+            this.Menu.ImagePosition = -30;
+            this.Menu.ImageZoom = 100;
+            this.Menu.LabelPosition = 60;
+            this.Menu.LabelText = "Menu";
+            this.Menu.Location = new System.Drawing.Point(347, 32);
+            this.Menu.Margin = new System.Windows.Forms.Padding(6);
+            this.Menu.Name = "Menu";
+            this.Menu.Size = new System.Drawing.Size(289, 249);
+            this.Menu.TabIndex = 4;
+            this.Menu.Click += new System.EventHandler(this.Menu_Click);
             // 
             // RemoveUser
             // 
@@ -139,25 +156,26 @@
             this.RemoveUser.TabIndex = 4;
             this.RemoveUser.Click += new System.EventHandler(this.RemoveUser_Click);
             // 
-            // bunifuTileButton3
+            // StaffList
             // 
-            this.bunifuTileButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.bunifuTileButton3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.bunifuTileButton3.color = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.bunifuTileButton3.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(29)))), ((int)(((byte)(31)))));
-            this.bunifuTileButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTileButton3.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.bunifuTileButton3.ForeColor = System.Drawing.Color.White;
-            this.bunifuTileButton3.Image = ((System.Drawing.Image)(resources.GetObject("bunifuTileButton3.Image")));
-            this.bunifuTileButton3.ImagePosition = 50;
-            this.bunifuTileButton3.ImageZoom = 45;
-            this.bunifuTileButton3.LabelPosition = 60;
-            this.bunifuTileButton3.LabelText = "Staff List";
-            this.bunifuTileButton3.Location = new System.Drawing.Point(663, 32);
-            this.bunifuTileButton3.Margin = new System.Windows.Forms.Padding(6);
-            this.bunifuTileButton3.Name = "bunifuTileButton3";
-            this.bunifuTileButton3.Size = new System.Drawing.Size(289, 249);
-            this.bunifuTileButton3.TabIndex = 4;
+            this.StaffList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.StaffList.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.StaffList.color = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.StaffList.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(29)))), ((int)(((byte)(31)))));
+            this.StaffList.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.StaffList.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.StaffList.ForeColor = System.Drawing.Color.White;
+            this.StaffList.Image = ((System.Drawing.Image)(resources.GetObject("StaffList.Image")));
+            this.StaffList.ImagePosition = 50;
+            this.StaffList.ImageZoom = 45;
+            this.StaffList.LabelPosition = 60;
+            this.StaffList.LabelText = "Staff List";
+            this.StaffList.Location = new System.Drawing.Point(663, 32);
+            this.StaffList.Margin = new System.Windows.Forms.Padding(6);
+            this.StaffList.Name = "StaffList";
+            this.StaffList.Size = new System.Drawing.Size(289, 249);
+            this.StaffList.TabIndex = 4;
+            this.StaffList.Click += new System.EventHandler(this.StaffList_Click);
             // 
             // ExirBtn
             // 
@@ -192,6 +210,7 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.HomeScreen_Load);
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Minimize)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -200,11 +219,12 @@
 
         private System.Windows.Forms.Panel panel2;
         private Bunifu.Framework.UI.BunifuTileButton ExirBtn;
-        private Bunifu.Framework.UI.BunifuTileButton bunifuTileButton5;
-        private Bunifu.Framework.UI.BunifuTileButton bunifuTileButton2;
-        private Bunifu.Framework.UI.BunifuTileButton bunifuTileButton4;
+        private Bunifu.Framework.UI.BunifuTileButton TablesAndOrders;
+        private Bunifu.Framework.UI.BunifuTileButton AddNewUser;
+        private Bunifu.Framework.UI.BunifuTileButton Menu;
         private Bunifu.Framework.UI.BunifuTileButton RemoveUser;
-        private Bunifu.Framework.UI.BunifuTileButton bunifuTileButton3;
+        private Bunifu.Framework.UI.BunifuTileButton StaffList;
+        private Bunifu.Framework.UI.BunifuImageButton Minimize;
     }
 }
 

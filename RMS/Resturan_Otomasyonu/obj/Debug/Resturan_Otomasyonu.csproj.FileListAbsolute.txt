@@ -36,3 +36,4 @@ C:\Users\ahmed\Desktop\RMS Project\RMS\Resturan_Otomasyonu\obj\Debug\Resturan_Ot
 C:\Users\ahmed\Desktop\RMS Project\RMS\Resturan_Otomasyonu\obj\Debug\Resturan_Otomasyonu.MenuItems.Sweets.resources
 C:\Users\ahmed\Desktop\RMS Project\RMS\Resturan_Otomasyonu\obj\Debug\Resturan_Otomasyonu.Menu.resources
 C:\Users\ahmed\Desktop\RMS Project\RMS\Resturan_Otomasyonu\obj\Debug\Resturan_Otomasyonu.HomeScreenActions.RemoveUser.resources
+C:\Users\ahmed\Desktop\RMS Project\RMS\Resturan_Otomasyonu\obj\Debug\Resturan_Otomasyonu.HomeScreenActions.StaffList.resources

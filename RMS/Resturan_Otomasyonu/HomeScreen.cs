@@ -41,21 +41,14 @@ namespace Resturan_Otomasyonu
 
         }
 
-        private void bunifuTileButton2_Click(object sender, EventArgs e)
+        private void AddNewUser_Click(object sender, EventArgs e)
         {
             AddNewUser newUser = new AddNewUser();
             newUser.Show();
             this.Hide();
         }
 
-        private void bunifuTileButton5_Click(object sender, EventArgs e)
-        {
-            TablesAndOrders tbAor = new TablesAndOrders();
-            tbAor.Show();
-            this.Hide();
-        }
-
-        private void bunifuTileButton4_Click(object sender, EventArgs e)
+        private void Menu_Click(object sender, EventArgs e)
         {
             Menu menu = new Menu();
             menu.Show();
@@ -68,6 +61,25 @@ namespace Resturan_Otomasyonu
             ru.Show();
             this.Hide();
 
+        }
+
+        private void Minimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void StaffList_Click(object sender, EventArgs e)
+        {
+            StaffList sl = new StaffList();
+            sl.Show();
+            this.Hide();
+        }
+
+        private void TablesAndOreders_Click(object sender, EventArgs e)
+        {
+            TablesAndOrders tbAor = new TablesAndOrders();
+            tbAor.Show();
+            this.Hide();
         }
     }
 }

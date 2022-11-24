@@ -69,6 +69,12 @@
     <Compile Include="HomeScreenActions\RemoveUser.Designer.cs">
       <DependentUpon>RemoveUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="HomeScreenActions\StaffList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomeScreenActions\StaffList.Designer.cs">
+      <DependentUpon>StaffList.cs</DependentUpon>
+    </Compile>
     <Compile Include="HomeScreenActions\TableBills.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +139,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="HomeScreenActions\RemoveUser.resx">
       <DependentUpon>RemoveUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeScreenActions\StaffList.resx">
+      <DependentUpon>StaffList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HomeScreenActions\TableBills.resx">
       <DependentUpon>TableBills.cs</DependentUpon>

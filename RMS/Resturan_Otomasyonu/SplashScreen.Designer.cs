@@ -38,11 +38,11 @@
             // 
             this.ProgressBar1.BackColor = System.Drawing.Color.Transparent;
             this.ProgressBar1.BorderRadius = 5;
-            this.ProgressBar1.Location = new System.Drawing.Point(123, 293);
+            this.ProgressBar1.Location = new System.Drawing.Point(109, 340);
             this.ProgressBar1.MaximumValue = 100;
             this.ProgressBar1.Name = "ProgressBar1";
             this.ProgressBar1.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
-            this.ProgressBar1.Size = new System.Drawing.Size(554, 10);
+            this.ProgressBar1.Size = new System.Drawing.Size(483, 10);
             this.ProgressBar1.TabIndex = 0;
             this.ProgressBar1.Value = 0;
             // 
@@ -57,8 +57,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ClientSize = new System.Drawing.Size(698, 450);
             this.Controls.Add(this.ProgressBar1);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
