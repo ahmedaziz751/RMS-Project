@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RemoveUser));
             this.button13 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.bunifuDropdown1 = new Bunifu.Framework.UI.BunifuDropdown();
+            this.UserDropdown = new Bunifu.Framework.UI.BunifuDropdown();
             this.label2 = new System.Windows.Forms.Label();
             this.Back = new Bunifu.Framework.UI.BunifuFlatButton();
             this.KullaniciSilBtn = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -65,19 +65,19 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "Remove User";
             // 
-            // bunifuDropdown1
+            // UserDropdown
             // 
-            this.bunifuDropdown1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuDropdown1.BorderRadius = 3;
-            this.bunifuDropdown1.ForeColor = System.Drawing.Color.White;
-            this.bunifuDropdown1.Items = new string[0];
-            this.bunifuDropdown1.Location = new System.Drawing.Point(146, 105);
-            this.bunifuDropdown1.Name = "bunifuDropdown1";
-            this.bunifuDropdown1.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
-            this.bunifuDropdown1.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(0)))), ((int)(((byte)(22)))));
-            this.bunifuDropdown1.selectedIndex = -1;
-            this.bunifuDropdown1.Size = new System.Drawing.Size(270, 29);
-            this.bunifuDropdown1.TabIndex = 9;
+            this.UserDropdown.BackColor = System.Drawing.Color.Transparent;
+            this.UserDropdown.BorderRadius = 3;
+            this.UserDropdown.ForeColor = System.Drawing.Color.White;
+            this.UserDropdown.Items = new string[0];
+            this.UserDropdown.Location = new System.Drawing.Point(146, 105);
+            this.UserDropdown.Name = "UserDropdown";
+            this.UserDropdown.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
+            this.UserDropdown.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(0)))), ((int)(((byte)(22)))));
+            this.UserDropdown.selectedIndex = -1;
+            this.UserDropdown.Size = new System.Drawing.Size(270, 29);
+            this.UserDropdown.TabIndex = 9;
             // 
             // label2
             // 
@@ -162,6 +162,7 @@
             this.KullaniciSilBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.KullaniciSilBtn.Textcolor = System.Drawing.Color.White;
             this.KullaniciSilBtn.TextFont = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.KullaniciSilBtn.Click += new System.EventHandler(this.KullaniciSilBtn_Click);
             // 
             // panel1
             // 
@@ -179,7 +180,7 @@
             this.ClientSize = new System.Drawing.Size(444, 259);
             this.Controls.Add(this.KullaniciSilBtn);
             this.Controls.Add(this.Back);
-            this.Controls.Add(this.bunifuDropdown1);
+            this.Controls.Add(this.UserDropdown);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button13);
@@ -197,7 +198,7 @@
 
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Label label1;
-        private Bunifu.Framework.UI.BunifuDropdown bunifuDropdown1;
+        private Bunifu.Framework.UI.BunifuDropdown UserDropdown;
         private System.Windows.Forms.Label label2;
         private Bunifu.Framework.UI.BunifuFlatButton Back;
         private Bunifu.Framework.UI.BunifuFlatButton KullaniciSilBtn;

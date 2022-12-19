@@ -323,6 +323,7 @@
             this.Done.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Done.Textcolor = System.Drawing.Color.White;
             this.Done.TextFont = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Done.Click += new System.EventHandler(this.Done_Click);
             // 
             // label4
             // 

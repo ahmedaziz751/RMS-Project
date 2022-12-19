@@ -20,7 +20,7 @@ namespace Resturan_Otomasyonu
         private void timer1_Tick(object sender, EventArgs e)
         {
             timer1.Enabled = true;
-            ProgressBar1.Value += 2;
+            ProgressBar1.Value += 100;
             if(ProgressBar1.Value == 100)
             {
                 timer1.Enabled = false;

@@ -37,3 +37,36 @@ C:\Users\ahmed\Desktop\RMS Project\RMS\Resturan_Otomasyonu\obj\Debug\Resturan_Ot
 C:\Users\ahmed\Desktop\RMS Project\RMS\Resturan_Otomasyonu\obj\Debug\Resturan_Otomasyonu.Menu.resources
 C:\Users\ahmed\Desktop\RMS Project\RMS\Resturan_Otomasyonu\obj\Debug\Resturan_Otomasyonu.HomeScreenActions.RemoveUser.resources
 C:\Users\ahmed\Desktop\RMS Project\RMS\Resturan_Otomasyonu\obj\Debug\Resturan_Otomasyonu.HomeScreenActions.StaffList.resources
+C:\Users\pc\Documents\ALAN\projects\RMS\RMS-Project\RMS\Resturan_Otomasyonu\bin\Debug\Resturan_Otomasyonu.exe.config
+C:\Users\pc\Documents\ALAN\projects\RMS\RMS-Project\RMS\Resturan_Otomasyonu\bin\Debug\Resturan_Otomasyonu.exe
+C:\Users\pc\Documents\ALAN\projects\RMS\RMS-Project\RMS\Resturan_Otomasyonu\bin\Debug\Resturan_Otomasyonu.pdb
+C:\Users\pc\Documents\ALAN\projects\RMS\RMS-Project\RMS\Resturan_Otomasyonu\obj\Debug\Resturan_Otomasyonu.csproj.AssemblyReference.cache
+C:\Users\pc\Documents\ALAN\projects\RMS\RMS-Project\RMS\Resturan_Otomasyonu\obj\Debug\Resturan_Otomasyonu.csproj.SuggestedBindingRedirects.cache
+C:\Users\pc\Documents\ALAN\projects\RMS\RMS-Project\RMS\Resturan_Otomasyonu\obj\Debug\Resturan_Otomasyonu.HomeScreen.resources
+C:\Users\pc\Documents\ALAN\projects\RMS\RMS-Project\RMS\Resturan_Otomasyonu\obj\Debug\Resturan_Otomasyonu.HomeScreenActions.AddOrder.resources
+C:\Users\pc\Documents\ALAN\projects\RMS\RMS-Project\RMS\Resturan_Otomasyonu\obj\Debug\Resturan_Otomasyonu.HomeScreenActions.RemoveUser.resources
+C:\Users\pc\Documents\ALAN\projects\RMS\RMS-Project\RMS\Resturan_Otomasyonu\obj\Debug\Resturan_Otomasyonu.HomeScreenActions.StaffList.resources
+C:\Users\pc\Documents\ALAN\projects\RMS\RMS-Project\RMS\Resturan_Otomasyonu\obj\Debug\Resturan_Otomasyonu.HomeScreenActions.TableBills.resources
+C:\Users\pc\Documents\ALAN\projects\RMS\RMS-Project\RMS\Resturan_Otomasyonu\obj\Debug\Resturan_Otomasyonu.HomeScreenActions.TablesAndOrders.resources
+C:\Users\pc\Documents\ALAN\projects\RMS\RMS-Project\RMS\Resturan_Otomasyonu\obj\Debug\Resturan_Otomasyonu.LoginScreen.resources
+C:\Users\pc\Documents\ALAN\projects\RMS\RMS-Project\RMS\Resturan_Otomasyonu\obj\Debug\Resturan_Otomasyonu.Menu.resources
+C:\Users\pc\Documents\ALAN\projects\RMS\RMS-Project\RMS\Resturan_Otomasyonu\obj\Debug\Resturan_Otomasyonu.MenuItems.Drinks.resources
+C:\Users\pc\Documents\ALAN\projects\RMS\RMS-Project\RMS\Resturan_Otomasyonu\obj\Debug\Resturan_Otomasyonu.MenuItems.Food.resources
+C:\Users\pc\Documents\ALAN\projects\RMS\RMS-Project\RMS\Resturan_Otomasyonu\obj\Debug\Resturan_Otomasyonu.MenuItems.Sweets.resources
+C:\Users\pc\Documents\ALAN\projects\RMS\RMS-Project\RMS\Resturan_Otomasyonu\obj\Debug\Resturan_Otomasyonu.Properties.Resources.resources
+C:\Users\pc\Documents\ALAN\projects\RMS\RMS-Project\RMS\Resturan_Otomasyonu\obj\Debug\Resturan_Otomasyonu.AddNewUser.resources
+C:\Users\pc\Documents\ALAN\projects\RMS\RMS-Project\RMS\Resturan_Otomasyonu\obj\Debug\Resturan_Otomasyonu.SplashScreen.resources
+C:\Users\pc\Documents\ALAN\projects\RMS\RMS-Project\RMS\Resturan_Otomasyonu\obj\Debug\Resturan_Otomasyonu.csproj.GenerateResource.cache
+C:\Users\pc\Documents\ALAN\projects\RMS\RMS-Project\RMS\Resturan_Otomasyonu\obj\Debug\Resturan_Otomasyonu.csproj.CoreCompileInputs.cache
+C:\Users\pc\Documents\ALAN\projects\RMS\RMS-Project\RMS\Resturan_Otomasyonu\obj\Debug\Resturan_Otomasyonu.csproj.CopyComplete
+C:\Users\pc\Documents\ALAN\projects\RMS\RMS-Project\RMS\Resturan_Otomasyonu\obj\Debug\Resturan_Otomasyonu.exe
+C:\Users\pc\Documents\ALAN\projects\RMS\RMS-Project\RMS\Resturan_Otomasyonu\obj\Debug\Resturan_Otomasyonu.pdb
+C:\Users\pc\Documents\ALAN\projects\RMS\RMS-Project\RMS\Resturan_Otomasyonu\bin\Debug\EntityFramework.dll
+C:\Users\pc\Documents\ALAN\projects\RMS\RMS-Project\RMS\Resturan_Otomasyonu\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\pc\Documents\ALAN\projects\RMS\RMS-Project\RMS\Resturan_Otomasyonu\bin\Debug\System.Data.SQLite.dll
+C:\Users\pc\Documents\ALAN\projects\RMS\RMS-Project\RMS\Resturan_Otomasyonu\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\pc\Documents\ALAN\projects\RMS\RMS-Project\RMS\Resturan_Otomasyonu\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\pc\Documents\ALAN\projects\RMS\RMS-Project\RMS\Resturan_Otomasyonu\bin\Debug\EntityFramework.xml
+C:\Users\pc\Documents\ALAN\projects\RMS\RMS-Project\RMS\Resturan_Otomasyonu\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\pc\Documents\ALAN\projects\RMS\RMS-Project\RMS\Resturan_Otomasyonu\bin\Debug\System.Data.SQLite.xml
+C:\Users\pc\Documents\ALAN\projects\RMS\RMS-Project\RMS\Resturan_Otomasyonu\bin\Debug\main.db

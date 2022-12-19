@@ -37,7 +37,15 @@ namespace Resturan_Otomasyonu.HomeScreenActions
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            TableBills tb = new TableBills();
+
+
+            /*********************************** Control **************************************/
+
+            PictureBox pictureBox = (PictureBox)sender;   
+
+            /*********************************** Control **************************************/
+
+            TableBills tb = new TableBills(pictureBox.Name);
             tb.Show();
         }
 

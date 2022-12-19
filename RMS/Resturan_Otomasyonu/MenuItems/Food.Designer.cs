@@ -30,11 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Food));
             this.Done = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.VPizzaNumber = new Bunifu.Framework.UI.BunifuDropdown();
             this.ShawarmaNumber = new Bunifu.Framework.UI.BunifuDropdown();
-            this.BurgerNumber = new Bunifu.Framework.UI.BunifuDropdown();
             this.PizzaNumber = new Bunifu.Framework.UI.BunifuDropdown();
-            this.SteakNumber = new Bunifu.Framework.UI.BunifuDropdown();
             this.FishNumber = new Bunifu.Framework.UI.BunifuDropdown();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -47,12 +44,15 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.KebabNumber = new Bunifu.Framework.UI.BunifuDropdown();
-            this.MeatballsNumber = new Bunifu.Framework.UI.BunifuDropdown();
             this.SoupNumber = new Bunifu.Framework.UI.BunifuDropdown();
-            this.CSkewerNumber = new Bunifu.Framework.UI.BunifuDropdown();
             this.label11 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button13 = new System.Windows.Forms.Button();
+            this.MeatballsNumber = new Bunifu.Framework.UI.BunifuDropdown();
+            this.CSkewerNumber = new Bunifu.Framework.UI.BunifuDropdown();
+            this.BurgerNumber = new Bunifu.Framework.UI.BunifuDropdown();
+            this.VPizzaNumber = new Bunifu.Framework.UI.BunifuDropdown();
+            this.SteakNumber = new Bunifu.Framework.UI.BunifuDropdown();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -91,35 +91,7 @@
             this.Done.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Done.Textcolor = System.Drawing.Color.White;
             this.Done.TextFont = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // VPizzaNumber
-            // 
-            this.VPizzaNumber.BackColor = System.Drawing.Color.Transparent;
-            this.VPizzaNumber.BorderRadius = 50;
-            this.VPizzaNumber.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VPizzaNumber.ForeColor = System.Drawing.Color.White;
-            this.VPizzaNumber.Items = new string[] {
-        "1",
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
-        "7",
-        "8",
-        "9",
-        "10",
-        "11",
-        "12",
-        "13"};
-            this.VPizzaNumber.Location = new System.Drawing.Point(400, 169);
-            this.VPizzaNumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.VPizzaNumber.Name = "VPizzaNumber";
-            this.VPizzaNumber.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
-            this.VPizzaNumber.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(0)))), ((int)(((byte)(22)))));
-            this.VPizzaNumber.selectedIndex = -1;
-            this.VPizzaNumber.Size = new System.Drawing.Size(123, 30);
-            this.VPizzaNumber.TabIndex = 52;
+            this.Done.Click += new System.EventHandler(this.Done_Click);
             // 
             // ShawarmaNumber
             // 
@@ -150,35 +122,6 @@
             this.ShawarmaNumber.Size = new System.Drawing.Size(123, 30);
             this.ShawarmaNumber.TabIndex = 51;
             // 
-            // BurgerNumber
-            // 
-            this.BurgerNumber.BackColor = System.Drawing.Color.Transparent;
-            this.BurgerNumber.BorderRadius = 50;
-            this.BurgerNumber.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BurgerNumber.ForeColor = System.Drawing.Color.White;
-            this.BurgerNumber.Items = new string[] {
-        "1",
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
-        "7",
-        "8",
-        "9",
-        "10",
-        "11",
-        "12",
-        "13"};
-            this.BurgerNumber.Location = new System.Drawing.Point(400, 123);
-            this.BurgerNumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.BurgerNumber.Name = "BurgerNumber";
-            this.BurgerNumber.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
-            this.BurgerNumber.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(0)))), ((int)(((byte)(22)))));
-            this.BurgerNumber.selectedIndex = -1;
-            this.BurgerNumber.Size = new System.Drawing.Size(123, 30);
-            this.BurgerNumber.TabIndex = 50;
-            // 
             // PizzaNumber
             // 
             this.PizzaNumber.BackColor = System.Drawing.Color.Transparent;
@@ -207,35 +150,6 @@
             this.PizzaNumber.selectedIndex = -1;
             this.PizzaNumber.Size = new System.Drawing.Size(123, 30);
             this.PizzaNumber.TabIndex = 49;
-            // 
-            // SteakNumber
-            // 
-            this.SteakNumber.BackColor = System.Drawing.Color.Transparent;
-            this.SteakNumber.BorderRadius = 50;
-            this.SteakNumber.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SteakNumber.ForeColor = System.Drawing.Color.White;
-            this.SteakNumber.Items = new string[] {
-        "1",
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
-        "7",
-        "8",
-        "9",
-        "10",
-        "11",
-        "12",
-        "13"};
-            this.SteakNumber.Location = new System.Drawing.Point(400, 72);
-            this.SteakNumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.SteakNumber.Name = "SteakNumber";
-            this.SteakNumber.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
-            this.SteakNumber.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(0)))), ((int)(((byte)(22)))));
-            this.SteakNumber.selectedIndex = -1;
-            this.SteakNumber.Size = new System.Drawing.Size(123, 30);
-            this.SteakNumber.TabIndex = 53;
             // 
             // FishNumber
             // 
@@ -405,35 +319,6 @@
             this.KebabNumber.Size = new System.Drawing.Size(123, 30);
             this.KebabNumber.TabIndex = 49;
             // 
-            // MeatballsNumber
-            // 
-            this.MeatballsNumber.BackColor = System.Drawing.Color.Transparent;
-            this.MeatballsNumber.BorderRadius = 50;
-            this.MeatballsNumber.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MeatballsNumber.ForeColor = System.Drawing.Color.White;
-            this.MeatballsNumber.Items = new string[] {
-        "1",
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
-        "7",
-        "8",
-        "9",
-        "10",
-        "11",
-        "12",
-        "13"};
-            this.MeatballsNumber.Location = new System.Drawing.Point(400, 216);
-            this.MeatballsNumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.MeatballsNumber.Name = "MeatballsNumber";
-            this.MeatballsNumber.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
-            this.MeatballsNumber.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(0)))), ((int)(((byte)(22)))));
-            this.MeatballsNumber.selectedIndex = -1;
-            this.MeatballsNumber.Size = new System.Drawing.Size(123, 30);
-            this.MeatballsNumber.TabIndex = 50;
-            // 
             // SoupNumber
             // 
             this.SoupNumber.BackColor = System.Drawing.Color.Transparent;
@@ -463,6 +348,72 @@
             this.SoupNumber.Size = new System.Drawing.Size(123, 30);
             this.SoupNumber.TabIndex = 51;
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Century Gothic", 20F);
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(225, 14);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(83, 33);
+            this.label11.TabIndex = 42;
+            this.label11.Text = "Food";
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.label8);
+            this.panel1.Location = new System.Drawing.Point(-1, -1);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(566, 383);
+            this.panel1.TabIndex = 56;
+            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
+            // 
+            // button13
+            // 
+            this.button13.FlatAppearance.BorderSize = 0;
+            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button13.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button13.ForeColor = System.Drawing.Color.White;
+            this.button13.Image = ((System.Drawing.Image)(resources.GetObject("button13.Image")));
+            this.button13.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button13.Location = new System.Drawing.Point(518, 12);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(32, 35);
+            this.button13.TabIndex = 55;
+            this.button13.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
+            // 
+            // MeatballsNumber
+            // 
+            this.MeatballsNumber.BackColor = System.Drawing.Color.Transparent;
+            this.MeatballsNumber.BorderRadius = 50;
+            this.MeatballsNumber.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MeatballsNumber.ForeColor = System.Drawing.Color.White;
+            this.MeatballsNumber.Items = new string[] {
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13"};
+            this.MeatballsNumber.Location = new System.Drawing.Point(403, 215);
+            this.MeatballsNumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MeatballsNumber.Name = "MeatballsNumber";
+            this.MeatballsNumber.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
+            this.MeatballsNumber.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(0)))), ((int)(((byte)(22)))));
+            this.MeatballsNumber.selectedIndex = -1;
+            this.MeatballsNumber.Size = new System.Drawing.Size(123, 30);
+            this.MeatballsNumber.TabIndex = 58;
+            // 
             // CSkewerNumber
             // 
             this.CSkewerNumber.BackColor = System.Drawing.Color.Transparent;
@@ -483,56 +434,101 @@
         "11",
         "12",
         "13"};
-            this.CSkewerNumber.Location = new System.Drawing.Point(400, 261);
+            this.CSkewerNumber.Location = new System.Drawing.Point(403, 260);
             this.CSkewerNumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CSkewerNumber.Name = "CSkewerNumber";
             this.CSkewerNumber.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
             this.CSkewerNumber.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(0)))), ((int)(((byte)(22)))));
             this.CSkewerNumber.selectedIndex = -1;
             this.CSkewerNumber.Size = new System.Drawing.Size(123, 30);
-            this.CSkewerNumber.TabIndex = 52;
+            this.CSkewerNumber.TabIndex = 60;
             // 
-            // label11
+            // BurgerNumber
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Century Gothic", 20F);
-            this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(225, 14);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(83, 33);
-            this.label11.TabIndex = 42;
-            this.label11.Text = "Food";
+            this.BurgerNumber.BackColor = System.Drawing.Color.Transparent;
+            this.BurgerNumber.BorderRadius = 50;
+            this.BurgerNumber.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BurgerNumber.ForeColor = System.Drawing.Color.White;
+            this.BurgerNumber.Items = new string[] {
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13"};
+            this.BurgerNumber.Location = new System.Drawing.Point(403, 122);
+            this.BurgerNumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BurgerNumber.Name = "BurgerNumber";
+            this.BurgerNumber.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
+            this.BurgerNumber.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(0)))), ((int)(((byte)(22)))));
+            this.BurgerNumber.selectedIndex = -1;
+            this.BurgerNumber.Size = new System.Drawing.Size(123, 30);
+            this.BurgerNumber.TabIndex = 59;
             // 
-            // panel1
+            // VPizzaNumber
             // 
-            this.panel1.Controls.Add(this.MeatballsNumber);
-            this.panel1.Controls.Add(this.SteakNumber);
-            this.panel1.Controls.Add(this.CSkewerNumber);
-            this.panel1.Controls.Add(this.BurgerNumber);
-            this.panel1.Controls.Add(this.VPizzaNumber);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Location = new System.Drawing.Point(-1, -1);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(562, 383);
-            this.panel1.TabIndex = 56;
-            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
+            this.VPizzaNumber.BackColor = System.Drawing.Color.Transparent;
+            this.VPizzaNumber.BorderRadius = 50;
+            this.VPizzaNumber.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VPizzaNumber.ForeColor = System.Drawing.Color.White;
+            this.VPizzaNumber.Items = new string[] {
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13"};
+            this.VPizzaNumber.Location = new System.Drawing.Point(403, 168);
+            this.VPizzaNumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.VPizzaNumber.Name = "VPizzaNumber";
+            this.VPizzaNumber.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
+            this.VPizzaNumber.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(0)))), ((int)(((byte)(22)))));
+            this.VPizzaNumber.selectedIndex = -1;
+            this.VPizzaNumber.Size = new System.Drawing.Size(123, 30);
+            this.VPizzaNumber.TabIndex = 61;
             // 
-            // button13
+            // SteakNumber
             // 
-            this.button13.FlatAppearance.BorderSize = 0;
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.ForeColor = System.Drawing.Color.White;
-            this.button13.Image = ((System.Drawing.Image)(resources.GetObject("button13.Image")));
-            this.button13.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button13.Location = new System.Drawing.Point(518, 12);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(32, 35);
-            this.button13.TabIndex = 55;
-            this.button13.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button13.UseVisualStyleBackColor = true;
-            this.button13.Click += new System.EventHandler(this.button13_Click);
+            this.SteakNumber.BackColor = System.Drawing.Color.Transparent;
+            this.SteakNumber.BorderRadius = 50;
+            this.SteakNumber.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SteakNumber.ForeColor = System.Drawing.Color.White;
+            this.SteakNumber.Items = new string[] {
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13"};
+            this.SteakNumber.Location = new System.Drawing.Point(403, 78);
+            this.SteakNumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SteakNumber.Name = "SteakNumber";
+            this.SteakNumber.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
+            this.SteakNumber.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(0)))), ((int)(((byte)(22)))));
+            this.SteakNumber.selectedIndex = -1;
+            this.SteakNumber.Size = new System.Drawing.Size(123, 30);
+            this.SteakNumber.TabIndex = 57;
             // 
             // Food
             // 
@@ -540,6 +536,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
             this.ClientSize = new System.Drawing.Size(562, 382);
+            this.Controls.Add(this.MeatballsNumber);
+            this.Controls.Add(this.CSkewerNumber);
+            this.Controls.Add(this.BurgerNumber);
+            this.Controls.Add(this.VPizzaNumber);
+            this.Controls.Add(this.SteakNumber);
             this.Controls.Add(this.button13);
             this.Controls.Add(this.Done);
             this.Controls.Add(this.SoupNumber);
@@ -572,11 +573,8 @@
 
         private System.Windows.Forms.Button button13;
         private Bunifu.Framework.UI.BunifuFlatButton Done;
-        private Bunifu.Framework.UI.BunifuDropdown VPizzaNumber;
         private Bunifu.Framework.UI.BunifuDropdown ShawarmaNumber;
-        private Bunifu.Framework.UI.BunifuDropdown BurgerNumber;
         private Bunifu.Framework.UI.BunifuDropdown PizzaNumber;
-        private Bunifu.Framework.UI.BunifuDropdown SteakNumber;
         private Bunifu.Framework.UI.BunifuDropdown FishNumber;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
@@ -589,10 +587,13 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private Bunifu.Framework.UI.BunifuDropdown KebabNumber;
-        private Bunifu.Framework.UI.BunifuDropdown MeatballsNumber;
         private Bunifu.Framework.UI.BunifuDropdown SoupNumber;
-        private Bunifu.Framework.UI.BunifuDropdown CSkewerNumber;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Panel panel1;
+        private Bunifu.Framework.UI.BunifuDropdown MeatballsNumber;
+        private Bunifu.Framework.UI.BunifuDropdown CSkewerNumber;
+        private Bunifu.Framework.UI.BunifuDropdown BurgerNumber;
+        private Bunifu.Framework.UI.BunifuDropdown VPizzaNumber;
+        private Bunifu.Framework.UI.BunifuDropdown SteakNumber;
     }
 }

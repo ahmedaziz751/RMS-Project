@@ -8,6 +8,8 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SQLite;
+using System.IO;
 
 namespace Resturan_Otomasyonu
 {
@@ -36,13 +38,34 @@ namespace Resturan_Otomasyonu
         }
 
 
-        private void bunifuFlatButton1_Click(object sender, EventArgs e)
+        private void LoginBtn_Click(object sender, EventArgs e)
         {
-            SplashScreen spscr = new SplashScreen();
-            spscr.Show();
-            this.Hide();
+
+
+            /*********************************** Control **************************************/
+
+            SQLiteConnection con = new SQLiteConnection("Data source=.\\main.db;version=3");
+            DataTable dt = new DataTable();
+            SQLiteDataAdapter adtr = new SQLiteDataAdapter("SELECT * FROM admin WHERE user_name = '"+UserName.Text+ "' AND password = '"+Password.Text + "';", con);
+            adtr.Fill(dt);
+            con.Close();
+
+            if (dt.Rows.Count <= 0)
+            {
+                MessageBox.Show("Username or Password are incorect " , "Warning", MessageBoxButtons.OK,MessageBoxIcon.Warning);
+            }
+            else
+            { 
+                SplashScreen spscr = new SplashScreen();
+                spscr.Show();
+                this.Hide();
+            }
+
+            /*********************************** Control **************************************/
+
+
         }
-        
+
 
         private void Password_Enter(object sender, EventArgs e)
         {
@@ -94,6 +117,6 @@ namespace Resturan_Otomasyonu
         {
             Application.Exit();
         }
-        
+
     }
 }

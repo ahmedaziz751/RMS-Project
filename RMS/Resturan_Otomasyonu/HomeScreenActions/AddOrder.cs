@@ -14,9 +14,11 @@ namespace Resturan_Otomasyonu.HomeScreenActions
 {
     public partial class AddOrder : Form
     {
-        public AddOrder()
+        String table;
+        public AddOrder(string table)
         {
             InitializeComponent();
+            this.table = table;
         }
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -38,21 +40,21 @@ namespace Resturan_Otomasyonu.HomeScreenActions
 
         private void Drinks_Click(object sender, EventArgs e)
         {
-            Drinks d = new Drinks();
+            Drinks d = new Drinks(this.table);
             d.Show();
 
         }
 
         private void Food_Click(object sender, EventArgs e)
         {
-            Food food = new Food();
+            Food food = new Food(this.table);
             food.Show();
 
         }
 
         private void Sweets_Click(object sender, EventArgs e)
         {
-            Sweets sweets = new Sweets();
+            Sweets sweets = new Sweets(this.table);
             sweets.Show();
 
         }

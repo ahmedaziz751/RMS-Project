@@ -1,7 +1,9 @@
-﻿using System;
+﻿using Bunifu.Framework.UI;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SQLite;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -13,9 +15,11 @@ namespace Resturan_Otomasyonu.MenuItems
 {
     public partial class Food : Form
     {
-        public Food()
+        String table;
+        public Food(string table)
         {
             InitializeComponent();
+            this.table = table;
         }
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -34,5 +38,51 @@ namespace Resturan_Otomasyonu.MenuItems
         {
             this.Close();
         }
+
+        /*********************************** Control **************************************/
+        private void Done_Click(object sender, EventArgs e)
+        {
+
+
+            float totalPrice = 0f;
+
+            SQLiteConnection con = new SQLiteConnection("Data source=.\\main.db;version=3");
+            DataTable dt = new DataTable();
+            SQLiteDataAdapter adtr = new SQLiteDataAdapter("SELECT bill FROM tables WHERE name = '" + table + "';", con);
+            adtr.Fill(dt);
+            if (dt.Rows.Count > 0)
+            {
+                totalPrice += float.Parse(dt.Rows[0][0].ToString());
+            }
+            int i = 0;
+            foreach (var dropDown in this.Controls.OfType<BunifuDropdown>())
+            {
+                
+                if (dropDown.selectedIndex >= 0)
+                {
+                    dt = new DataTable();
+                    adtr = new SQLiteDataAdapter("SELECT price FROM menu WHERE name = '" + dropDown.Name + "';", con);
+                    adtr.Fill(dt);
+                    if (dt.Rows.Count > 0)
+                    {
+                        totalPrice += float.Parse(dt.Rows[0][0].ToString()) * float.Parse(dropDown.selectedValue);
+                    }
+                    else { MessageBox.Show("NO ROW FOR " + dropDown.Name); }
+
+
+                }
+                
+            }
+            con.Open();
+            SQLiteCommand cmnd = new SQLiteCommand();
+            cmnd = con.CreateCommand();
+            cmnd.CommandText = "UPDATE tables SET bill = " + totalPrice + " WHERE name = '" + table + "' ;";
+            cmnd.ExecuteNonQuery();
+            con.Close();
+            MessageBox.Show(table + "'s Bill is = " + totalPrice, "Bill Has Changed", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+        }
+
+        /*********************************** Control **************************************/
     }
 }

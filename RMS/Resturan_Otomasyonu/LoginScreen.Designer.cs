@@ -126,7 +126,7 @@
             this.LoginBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.LoginBtn.Textcolor = System.Drawing.Color.White;
             this.LoginBtn.TextFont = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LoginBtn.Click += new System.EventHandler(this.bunifuFlatButton1_Click);
+            this.LoginBtn.Click += new System.EventHandler(this.LoginBtn_Click);
             // 
             // panel2
             // 

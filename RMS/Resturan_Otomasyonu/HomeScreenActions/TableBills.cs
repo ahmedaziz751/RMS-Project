@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SQLite;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -13,9 +14,24 @@ namespace Resturan_Otomasyonu.HomeScreenActions
 {
     public partial class TableBills : Form
     {
-        public TableBills()
+        /*********************************** Control **************************************/
+        String table;
+        /*********************************** Control **************************************/
+        public TableBills(String table)
         {
             InitializeComponent();
+            /*********************************** Control **************************************/
+            this.table = table;
+
+            SQLiteConnection con = new SQLiteConnection("Data source=.\\main.db;version=3");
+            DataTable dt = new DataTable();
+            SQLiteDataAdapter adtr = new SQLiteDataAdapter("SELECT bill FROM tables WHERE name = '"+this.table+"';", con);
+            adtr.Fill(dt);
+            con.Close();
+
+            Bill.Text = dt.Rows[0][0].ToString();
+
+            /*********************************** Control **************************************/
         }
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -32,7 +48,7 @@ namespace Resturan_Otomasyonu.HomeScreenActions
 
         private void AddTable_Click(object sender, EventArgs e)
         {
-            AddOrder ao = new AddOrder();
+            AddOrder ao = new AddOrder(this.table);
             ao.Show();
         }
 
@@ -40,5 +56,28 @@ namespace Resturan_Otomasyonu.HomeScreenActions
         {
             this.Hide();
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+
+        /*********************************** Control **************************************/
+        private void Reset_Click(object sender, EventArgs e)
+        {
+            SQLiteConnection con = new SQLiteConnection("Data source=.\\main.db;version=3");
+            con.Open();
+            SQLiteCommand cmnd = new SQLiteCommand();
+            cmnd = con.CreateCommand();
+            cmnd.CommandText = "UPDATE tables SET bill = 0 WHERE name = '" + table + "' ;";
+            cmnd.ExecuteNonQuery();
+            con.Close();
+            Bill.Text = "0";
+            MessageBox.Show(table + "'s Bill is now 0", "Table Reseted", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            
+        }
+
+        /*********************************** Control **************************************/
     }
 }

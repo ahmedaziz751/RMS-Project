@@ -32,6 +32,9 @@
             this.Order = new Bunifu.Framework.UI.BunifuFlatButton();
             this.button13 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Reset = new System.Windows.Forms.Button();
+            this.Bill = new System.Windows.Forms.Label();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // Order
@@ -89,11 +92,39 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.Reset);
+            this.panel1.Controls.Add(this.Bill);
             this.panel1.Location = new System.Drawing.Point(-2, -3);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(406, 283);
             this.panel1.TabIndex = 13;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
+            // 
+            // Reset
+            // 
+            this.Reset.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Reset.Location = new System.Drawing.Point(135, 36);
+            this.Reset.Name = "Reset";
+            this.Reset.Size = new System.Drawing.Size(116, 45);
+            this.Reset.TabIndex = 2;
+            this.Reset.Text = "Reset";
+            this.Reset.UseVisualStyleBackColor = true;
+            this.Reset.Click += new System.EventHandler(this.Reset_Click);
+            // 
+            // Bill
+            // 
+            this.Bill.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Bill.AutoSize = true;
+            this.Bill.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Bill.ForeColor = System.Drawing.Color.White;
+            this.Bill.Location = new System.Drawing.Point(144, 107);
+            this.Bill.Name = "Bill";
+            this.Bill.Size = new System.Drawing.Size(95, 39);
+            this.Bill.TabIndex = 1;
+            this.Bill.Text = "Erorr";
             // 
             // TableBills
             // 
@@ -108,6 +139,8 @@
             this.Name = "TableBills";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TableBills";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -117,5 +150,7 @@
         private Bunifu.Framework.UI.BunifuFlatButton Order;
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button Reset;
+        private System.Windows.Forms.Label Bill;
     }
 }

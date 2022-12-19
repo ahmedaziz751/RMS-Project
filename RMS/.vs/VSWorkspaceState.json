@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\FastFoodDemo"
+    "\\Resturan_Otomasyonu",
+    "\\Resturan_Otomasyonu\\HomeScreenActions",
+    "\\Resturan_Otomasyonu\\MenuItems"
   ],
-  "SelectedNode": "\\ResturanOtomasyonu.sln",
+  "SelectedNode": "\\Resturan_Otomasyonu\\MenuItems\\Sweets.cs",
   "PreviewInSolutionExplorer": false
 }

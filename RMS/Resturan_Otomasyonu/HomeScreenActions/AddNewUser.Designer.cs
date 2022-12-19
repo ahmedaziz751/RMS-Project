@@ -128,6 +128,7 @@
             this.AddUser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.AddUser.Textcolor = System.Drawing.Color.White;
             this.AddUser.TextFont = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddUser.Click += new System.EventHandler(this.AddUser_Click);
             // 
             // Password
             // 
@@ -234,7 +235,7 @@
             this.panel2.Controls.Add(this.AddUser);
             this.panel2.Location = new System.Drawing.Point(1, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(600, 399);
+            this.panel2.Size = new System.Drawing.Size(596, 399);
             this.panel2.TabIndex = 15;
             this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
             // 
@@ -270,7 +271,7 @@
             this.Email.Name = "Email";
             this.Email.Size = new System.Drawing.Size(270, 44);
             this.Email.TabIndex = 4;
-            this.Email.Text = "Email Aderss";
+            this.Email.Text = "Email Adress";
             this.Email.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.Email.OnValueChanged += new System.EventHandler(this.Email_OnValueChanged);
             this.Email.Enter += new System.EventHandler(this.Email_Enter);

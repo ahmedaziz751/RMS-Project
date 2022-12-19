@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SQLite;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -16,6 +17,22 @@ namespace Resturan_Otomasyonu
         public Menu()
         {
             InitializeComponent();
+
+            /*********************************** Control **************************************/
+
+            SQLiteConnection con = new SQLiteConnection("Data source=.\\main.db;version=3");
+            DataTable dt = new DataTable();
+            SQLiteDataAdapter adtr = new SQLiteDataAdapter("SELECT * FROM menu ;", con);
+            adtr.Fill(dt);
+
+            DataView dv = new DataView(dt);
+
+            MenuDataGrid.DataSource = dv;
+            con.Close();
+
+            /*********************************** Control **************************************/
+
+
         }
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
